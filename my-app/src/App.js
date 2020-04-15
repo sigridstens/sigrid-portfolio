@@ -6,6 +6,7 @@ import About from './About/about.js';
 import Contact from './Contact/contact';
 import Portfolio from './Portfolio/portfolio.js';
 import Resume from './Resume/resume.js';
+import Footer from './Footer/footer.js';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
         <Header />
 
+        <Footer />
     </div>
   );
 }

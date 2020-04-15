@@ -33,9 +33,6 @@ function Header() {
                     </li>
                 </ul>
             </nav>
-
-            <img src={logo} className="App-logo" alt="logo" />
-
         </header>
     )
 }
