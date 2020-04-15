@@ -1,0 +1,219 @@
+/* Apply a natural box layout model to all elements, but allowing components to change
+Credit: Paul Irish
+ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* GLOBAL STYLES */
+:root {
+  --orange: #F05424;
+  --pink: #EEC4CE;
+  --yellow: #FBDB56;
+  --blue-grey: #476D7D;
+  --cream: #FBEDCC;
+  --black: #000;
+}
+
+body {
+  font-family: plantin, sans-serif;
+  letter-spacing: .025em;
+  font-size: 1em;
+  line-height: 1.25em;
+  position: relative;
+}
+
+.background{
+  width: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+
+}
+
+/*****************
+Shapes Section
+*****************/
+.shapes {
+  width: 55%;
+  position: absolute;
+  z-index: -10;
+}
+
+.pink-lips{
+  top: 20em;
+  left: 3%;
+}
+
+.blue-lips{
+  top: 60em;
+  left: 55%;
+}
+
+.blue-circle{
+  top: 10em;
+  left: 8%;
+  width: 10%;
+}
+
+.blue-circle-two {
+  top: 45em;
+  left: -5em;
+  width: 25%;
+}
+
+.cream-circle{
+  top: 5em;
+  left: 23%;
+  width: 22%;
+}
+
+.pink-circle{
+  top: 62em;
+  left: 35%;
+  width: 15%;
+}
+
+.cream-crescent{
+  top: 67em;
+  left: -15%;
+  width: 55%;
+}
+
+.yellow-crescent{
+  top: 20em;
+  left: 30%;
+}
+
+.pink-lips-two{
+  top: 5em;
+  left: 77%;
+  transform: rotate(160deg);
+  width: 55%;
+}
+
+
+
+
+
+/* HOME PAGE STYLES */
+/* Header Styles */
+header {
+  position: fixed;
+  width: 100%;
+  padding: 3em 4em 1em 4em;
+}
+
+header h1, header h2 {
+  color: var(--black);
+}
+
+header h1 {
+  font-size: 1.75em;
+  margin: .25em .25em ;
+}
+
+header h2 {
+  font-size: 1.25em;
+  margin: .25em .3em;
+}
+
+header ul {
+  list-style-type: none;
+  color: var(--black);
+  font-weight: bold;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header li {
+  padding: 0 1em;
+}
+
+.main-nav {
+  text-align: right;
+  position: absolute;
+  bottom: 0em;
+  right: 3em;
+}
+
+/* Main Styles */
+main {
+  width: 90%;
+  z-index: 10;
+  position: fixed;
+  top: 15em;
+  left: 5%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 1%
+}
+
+.col-two {
+  margin-top: 10em;
+}
+
+.bio-pic {
+  top: 10em;
+  width: 90%;
+}
+
+
+
+
+
+
+
+/* Footer Styles */
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 5em 0 1em 0;
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
