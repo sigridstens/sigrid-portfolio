@@ -13,8 +13,10 @@ function Header() {
     return(
         <header className="App-header">
 
-            <h1>Sigrid Stensvold</h1>
-            <h2>graphic & web designer</h2>
+            <Link to="/">
+                <h1>Sigrid Stensvold</h1>
+                <h2>graphic & web designer</h2>
+            </Link>
 
             <nav className="main-nav">
                 <ul>

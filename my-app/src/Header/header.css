@@ -35,6 +35,6 @@ header li {
 .main-nav {
   text-align: right;
   position: absolute;
-  bottom: 0em;
+  bottom: 0;
   right: 3em;
 }

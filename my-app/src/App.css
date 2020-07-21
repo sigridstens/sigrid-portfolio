@@ -36,68 +36,6 @@ body {
 
 }
 
-/*****************
-Shapes Section
-*****************/
-.shapes {
-  width: 55%;
-  position: absolute;
-  z-index: -10;
-}
-
-.pink-lips{
-  top: 20em;
-  left: 3%;
-}
-
-.blue-lips{
-  top: 60em;
-  left: 55%;
-}
-
-.blue-circle{
-  top: 10em;
-  left: 8%;
-  width: 10%;
-}
-
-.blue-circle-two {
-  top: 45em;
-  left: -5em;
-  width: 25%;
-}
-
-.cream-circle{
-  top: 5em;
-  left: 23%;
-  width: 22%;
-}
-
-.pink-circle{
-  top: 62em;
-  left: 35%;
-  width: 15%;
-}
-
-.cream-crescent{
-  top: 67em;
-  left: -15%;
-  width: 55%;
-}
-
-.yellow-crescent{
-  top: 20em;
-  left: 30%;
-}
-
-.pink-lips-two{
-  top: 5em;
-  left: 77%;
-  transform: rotate(160deg);
-  width: 55%;
-}
-
-
 
 
 
@@ -111,8 +49,6 @@ main {
   position: fixed;
   top: 15em;
   left: 5%;
-  display: flex;
-  flex-direction: row-reverse;
 }
 
 .col {
@@ -126,10 +62,6 @@ main {
   margin-top: 10em;
 }
 
-.bio-pic {
-  top: 10em;
-  width: 90%;
-}
 
 
 
