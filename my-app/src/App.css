@@ -36,13 +36,50 @@ body {
 
 }
 
+.main-nav li {
+  position: relative;
+  padding: .5em 1em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  width: fit-content;
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--orange);
+}
+
+.main-nav a:hover::after {
+  visibility: visible;
+  width: 100%;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+
+/* Header Section */
+.App-header {
+    display: flex;
+}
+
+
+.logo h1, .logo h2 {
+  width: fit-content;
+}
+
+
+/* Home Page Styles */
 
 
 
-/* HOME PAGE STYLES */
-
-
-/* Main Styles */
+/* Main Section */
 main {
   width: 90%;
   z-index: 10;
@@ -62,22 +99,25 @@ main {
   margin-top: 10em;
 }
 
-
-
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Portfolio Section*/
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
+.project-preview {
+  margin: 1em;
+  padding: 1em;
+  background: var(--orange);
+  flex-basis: 29%;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Footer Section */
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 0 0 1em 0;
+  width: 100%;
 }

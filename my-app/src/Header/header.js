@@ -1,11 +1,5 @@
 import React from 'react';
 import './header.css';
-import {Route} from "react-router";
-import Portfolio from "../Portfolio/portfolio";
-import Resume from "../Resume/resume";
-import About from "../About/about";
-import Contact from "../Contact/contact";
-import logo from "../logo.svg";
 import {Link} from 'react-router-dom';
 
 
@@ -13,7 +7,7 @@ function Header() {
     return(
         <header className="App-header">
 
-            <Link to="/">
+            <Link to="/" className="logo">
                 <h1>Sigrid Stensvold</h1>
                 <h2>graphic & web designer</h2>
             </Link>
