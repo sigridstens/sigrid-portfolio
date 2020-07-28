@@ -23,7 +23,6 @@ body {
   font-family: plantin, sans-serif;
   letter-spacing: .025em;
   font-size: 1em;
-  line-height: 1.25em;
   position: relative;
 }
 
@@ -38,7 +37,7 @@ body {
 
 .main-nav li {
   position: relative;
-  padding: .5em 1em;
+  padding: 2em 1em;
 }
 
 a {
@@ -65,10 +64,44 @@ a {
 
 
 /* Header Section */
-.App-header {
-    display: flex;
+header {
+  width: 100%;
+  padding: 3em 4em 1em 4em;
+  display: flex;
+  justify-content: space-between;
 }
 
+header h1, header h2 {
+  color: var(--black);
+}
+
+header h1 {
+  font-size: 1.75em;
+  margin: .25em .25em ;
+}
+
+header h2 {
+  font-size: 1.25em;
+  margin: .25em .3em;
+}
+
+header .main-nav ul {
+  list-style-type: none;
+  color: var(--black);
+  font-weight: bold;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .main-nav ul li {
+  padding: 0 1em;
+}
+
+header .main-nav ul ul {
+  flex-direction: column;
+  display: none;
+}
 
 .logo h1, .logo h2 {
   width: fit-content;
@@ -81,23 +114,36 @@ a {
 
 /* Main Section */
 main {
-  width: 90%;
+  width: 80%;
   z-index: 10;
-  position: fixed;
-  top: 15em;
-  left: 5%;
+  margin: 5% auto;
+}
+
+.col-container {
+  display: flex;
+
 }
 
 .col {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  margin: 1%
+  margin: 3%;
 }
 
-.col-two {
-  margin-top: 10em;
+.col-one {
+  flex-basis: 50%;
 }
+
+
+.col-two {
+  flex-basis: 50%
+}
+
+
+/*About Section*/
+.biopic {
+  width: 100%;
+}
+
+
 
 /*Portfolio Section*/
 .gallery {
@@ -115,8 +161,6 @@ main {
 
 /* Footer Section */
 footer {
-  position: fixed;
-  bottom: 0;
   text-align: center;
   padding: 0 0 1em 0;
   width: 100%;

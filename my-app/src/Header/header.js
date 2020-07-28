@@ -15,17 +15,39 @@ function Header() {
             <nav className="main-nav">
                 <ul>
                     <li>
-                        <Link to="/portfolio">Portfolio</Link>
+                        <Link to="/portfolio">Work</Link>
+                        <ul>
+                            <li>
+                                <Link to="/portfolio">Graphic Design</Link>
+                            </li>
+
+                            <li>
+                                <Link to="/portfolio">Illustration</Link>
+                            </li>
+
+                            <li>
+                                <Link to="/portfolio">Motion Design</Link>
+                            </li>
+
+                            <li>
+                                <Link to="/portfolio">Painting</Link>
+                            </li>
+
+                            <li>
+                                <Link to="/portfolio">Web Development</Link>
+                            </li>
+
+                        </ul>
                     </li>
                     <li>
                         <Link to="/resume">Resume</Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/about">About Me</Link>
                     </li>
 
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <a href="mailto:sigridstensvold@gmail.com">Get in Touch</a>
                     </li>
                 </ul>
             </nav>

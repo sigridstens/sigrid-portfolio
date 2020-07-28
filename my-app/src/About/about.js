@@ -4,30 +4,20 @@ import '../App.css';
 
 function About() {
     return(
-        <main>
-            <h1>About</h1>
+        <main className="col-container">
+            <figure className="col col-one">
+                <img src={process.env.PUBLIC_URL + '/images/sigrid.jpg'} className="biopic" alt="Sigrid's profile" />
+            </figure>
 
-            <p>A multi-faceted millenial with interests ranging from anthropology and design, to local food and bicycle touring — my aim is to create striking and exciting designs that effortlessly convey deeper meaning and facilitate understanding in and between people.</p>
+            <section className="col col-two">
+                <h1>Hi there! I'm Sigrid Stensvold, a Minneapolis-based designer, illustrator, & web developer.</h1>
 
+                <p>I am an artist with a wide variety of interests and experiences who specializes in creating lively designs, whimsical illustrations, and intuitive web experiences. </p>
 
-            <h3>Experiences</h3>
-            <p>My professional experiences are as varied as my interests. With background in anthropology, content marketing, graphic design, museum exhibit design, web design, and front-end web development — I approach design problems from an interdisciplinary perspective.</p>
+                <p>When I am not working on school projects or freelance work, you might find me attempting to garden, plotting my next long distance bike tour, or cooking up something spontaneous in my kitchen.</p>
 
-            <p>Peruse my resume...</p>
-
-            <h3>Skills and Services</h3>
-            <p>Looking for a fresh perspective on an upcoming project? Need help in one of the following design areas?</p>
-
-            <ul>
-                <li>Print</li>
-                <li>Web</li>
-                <li>Mobile</li>
-                <li>Logo</li>
-                <li>User experience</li>
-                <li>Front-end web development</li>
-            </ul>
-
-            <p>Let me help make your vision a reality. Get in touch.</p>
+                <p>Looking for a fresh perspective on an upcoming project in one of these areas? Let's connect!</p>
+            </section>
         </main>
 
 )
